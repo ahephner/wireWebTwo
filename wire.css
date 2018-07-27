@@ -1,0 +1,127 @@
+.navbar {
+  opacity: .8;
+  background-color: #eee3e3;
+  padding-left: 10px;
+}
+.navbar.center h3{
+  text-align: center;
+}
+#myCarousel{
+  z-index: 200;
+}
+.tab{
+  padding-right: 30px; 
+}
+
+#newUser:hover{
+  cursor: pointer;
+}
+.navbar.center .navbar-inner .nav {
+  display:inline-block;
+  float: none;
+}
+#welcome{
+  color: '#FF0000';
+  font-size: 60 px; 
+}
+.wrapper > div {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #eee3e3;
+    padding: 1em;
+    color: #111111;
+    opacity: 0.9; 
+    text-align: center; 
+    transition: 1s;
+    overflow: hidden;
+       
+}
+.wrapper >  .item3:hover{
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  height: 200px;
+  overflow: visible;
+}
+.wrapper >  .item2:hover{
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  height: 140px;
+  z-index: 100;
+}
+.wrapper >  .item4:hover{
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  height: 140px;
+  z-index: 100;
+}
+.wrapper >  .item5:hover{
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+  height: 140px;
+  z-index: 100;
+}
+.wrapper {
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 50px;
+    grid-auto-rows: 100px;
+    grid-template-areas: 
+      "a a a a b b b b"
+      "a a a a e e e e"
+      "a a a a f f f f"
+      "a a a a c c c c"
+      "a a a a d d d d"
+      "z z z z d d d d"
+      "z z z z d d d d";
+  }
+  .item1 {
+    grid-area: a;
+    
+  }
+  .item2 {
+    grid-area: b;
+    align-self: start;
+    margin-top: 10px; 
+  }
+  .item2 > h1 {
+    margin-left: 0.5fr;
+    line-height:51px;
+    vertical-align:middle;
+    color: black; 
+}
+  .item3 {
+    grid-area: c;
+    align-self: start;
+    margin-top: 10px; 
+  }
+  .item4 {
+    grid-area: f;
+    align-self: start; 
+    margin-top: 10px; 
+   
+  }
+  .item5{
+    grid-area: e;
+    align-self: start; 
+    margin-top: 10px;  
+  }
+  body{
+    background-image: url('https://images.unsplash.com/photo-1495292040232-745a10cd202c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=311b389f7632627e26e3f287581d0c0e&auto=format&fit=crop&w=1489&q=80'); 
+    background-repeat: no-repeat, repeat;
+    background-size: cover; 
+  }
+
+  .inventory{
+    visibility: hidden;
+  }
+  .vendor{
+    visibility: hidden;
+  }
+  .info{
+    visibility: hidden;
+  }
+  .look{
+    visibility: hidden; 
+   
+  }
