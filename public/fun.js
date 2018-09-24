@@ -7,7 +7,7 @@ class flip {
     }
 }
 
-
+//heres is a change
 let trek = new flip('domane', 12, 1500, 61 ); 
 
 console.log(trek); 
